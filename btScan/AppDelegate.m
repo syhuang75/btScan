@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 @interface AppDelegate ()
 
 @end
@@ -19,7 +20,7 @@
     // Override point for customization after application launch.
 
     NSLog(@"version(git) : %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CommitVersion"]);
-
+    [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
 
