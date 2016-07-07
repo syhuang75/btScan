@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0552576B848681B92DDD32 /* Pods_btScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB269E06ED579A3F523F179 /* Pods_btScan.framework */; };
 		926E61CC1D2E21B7009C4684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CB1D2E21B7009C4684 /* main.m */; };
 		926E61CF1D2E21B7009C4684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CE1D2E21B7009C4684 /* AppDelegate.m */; };
 		926E61D21D2E21B7009C4684 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61D11D2E21B7009C4684 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD24393F0DAF5685324E5A6 /* Pods-btScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btScan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btScan/Pods-btScan.debug.xcconfig"; sourceTree = "<group>"; };
 		926E61C71D2E21B7009C4684 /* btScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926E61CB1D2E21B7009C4684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		926E61CD1D2E21B7009C4684 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		926E61D61D2E21B7009C4684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926E61D91D2E21B8009C4684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		926E61DB1D2E21B8009C4684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		997D9BF4BE4A869F7795946A /* Pods-btScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btScan.release.xcconfig"; path = "Pods/Target Support Files/Pods-btScan/Pods-btScan.release.xcconfig"; sourceTree = "<group>"; };
+		DCB269E06ED579A3F523F179 /* Pods_btScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0552576B848681B92DDD32 /* Pods_btScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		819171089163EB8A0A6E7057 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AD24393F0DAF5685324E5A6 /* Pods-btScan.debug.xcconfig */,
+				997D9BF4BE4A869F7795946A /* Pods-btScan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		926E61BE1D2E21B7009C4684 = {
 			isa = PBXGroup;
 			children = (
 				926E61C91D2E21B7009C4684 /* btScan */,
 				926E61C81D2E21B7009C4684 /* Products */,
+				819171089163EB8A0A6E7057 /* Pods */,
+				AD08AC519C7364A41993F412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD08AC519C7364A41993F412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCB269E06ED579A3F523F179 /* Pods_btScan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,10 +110,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 926E61DE1D2E21B8009C4684 /* Build configuration list for PBXNativeTarget "btScan" */;
 			buildPhases = (
+				4958292176C75FFBC474D65A /* 📦 Check Pods Manifest.lock */,
 				926E61C31D2E21B7009C4684 /* Sources */,
 				926E61C41D2E21B7009C4684 /* Frameworks */,
 				926E61C51D2E21B7009C4684 /* Resources */,
 				926E61E11D2E349D009C4684 /* ShellScript */,
+				1D9EE56B530E750B9F39803B /* 📦 Embed Pods Frameworks */,
+				0B0A4B8D6AC9721A6FFFFFDC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B0A4B8D6AC9721A6FFFFFDC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btScan/Pods-btScan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9EE56B530E750B9F39803B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btScan/Pods-btScan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4958292176C75FFBC474D65A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		926E61E11D2E349D009C4684 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +352,7 @@
 		};
 		926E61DF1D2E21B8009C4684 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD24393F0DAF5685324E5A6 /* Pods-btScan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = btScan/Info.plist;
@@ -291,6 +364,7 @@
 		};
 		926E61E01D2E21B8009C4684 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997D9BF4BE4A869F7795946A /* Pods-btScan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = btScan/Info.plist;
