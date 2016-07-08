@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A0552576B848681B92DDD32 /* Pods_btScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB269E06ED579A3F523F179 /* Pods_btScan.framework */; };
+		925142771D2F750C00E66798 /* btManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 925142761D2F750C00E66798 /* btManager.m */; };
 		926E61CC1D2E21B7009C4684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CB1D2E21B7009C4684 /* main.m */; };
 		926E61CF1D2E21B7009C4684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CE1D2E21B7009C4684 /* AppDelegate.m */; };
 		926E61D51D2E21B7009C4684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E61D31D2E21B7009C4684 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		0AD24393F0DAF5685324E5A6 /* Pods-btScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btScan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btScan/Pods-btScan.debug.xcconfig"; sourceTree = "<group>"; };
+		925142751D2F750C00E66798 /* btManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btManager.h; sourceTree = "<group>"; };
+		925142761D2F750C00E66798 /* btManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = btManager.m; sourceTree = "<group>"; };
 		926E61C71D2E21B7009C4684 /* btScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926E61CB1D2E21B7009C4684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		926E61CD1D2E21B7009C4684 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 		926E61E51D2E4144009C4684 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				925142751D2F750C00E66798 /* btManager.h */,
+				925142761D2F750C00E66798 /* btManager.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				926E61CC1D2E21B7009C4684 /* main.m in Sources */,
 				926E61F01D2E48A8009C4684 /* DeviceListTableViewCell.m in Sources */,
 				926E61EA1D2E4164009C4684 /* MainPageViewController.m in Sources */,
+				925142771D2F750C00E66798 /* btManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

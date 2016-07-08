@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "btManager.h"
 
-@interface MainPageViewController : UIViewController
+@interface MainPageViewController : UIViewController <btManagerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label_version;
 @property (weak, nonatomic) IBOutlet UIButton *btn_scan;
 - (IBAction)pressed_btn_scan:(id)sender;

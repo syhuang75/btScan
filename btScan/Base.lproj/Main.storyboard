@@ -29,7 +29,6 @@
                                 <state key="normal" title="Scan"/>
                                 <connections>
                                     <action selector="pressed_btn_scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyx-KM-kY9"/>
-                                    <segue destination="miz-N6-G1f" kind="push" id="f7W-qS-dma"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,6 +46,7 @@
                     <connections>
                         <outlet property="btn_scan" destination="bID-W3-20X" id="Wio-Cs-g8b"/>
                         <outlet property="label_version" destination="2Qh-2q-e6O" id="3ha-2D-ODD"/>
+                        <segue destination="miz-N6-G1f" kind="show" id="bWd-ar-kTm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -80,25 +80,27 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asv-DD-Ua8">
-                                                            <rect key="frame" x="38" y="11" width="42" height="21"/>
+                                                            <rect key="frame" x="18" y="11" width="572" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpn-HJ-YfX">
-                                                            <rect key="frame" x="38" y="45" width="42" height="21"/>
+                                                            <rect key="frame" x="18" y="45" width="572" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="Gpn-HJ-YfX" firstAttribute="leading" secondItem="EjI-AH-2Mn" secondAttribute="leadingMargin" constant="30" id="1yG-Jz-0ma"/>
+                                                        <constraint firstItem="Gpn-HJ-YfX" firstAttribute="leading" secondItem="EjI-AH-2Mn" secondAttribute="leadingMargin" constant="10" id="1yG-Jz-0ma"/>
                                                         <constraint firstItem="asv-DD-Ua8" firstAttribute="top" secondItem="EjI-AH-2Mn" secondAttribute="topMargin" constant="3" id="84e-zP-rbO"/>
-                                                        <constraint firstItem="asv-DD-Ua8" firstAttribute="leading" secondItem="EjI-AH-2Mn" secondAttribute="leadingMargin" constant="30" id="B3p-VB-4Ec"/>
+                                                        <constraint firstAttribute="trailing" secondItem="asv-DD-Ua8" secondAttribute="trailing" constant="10" id="9XZ-g9-wTw"/>
+                                                        <constraint firstItem="asv-DD-Ua8" firstAttribute="leading" secondItem="EjI-AH-2Mn" secondAttribute="leadingMargin" constant="10" id="B3p-VB-4Ec"/>
                                                         <constraint firstItem="Gpn-HJ-YfX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="asv-DD-Ua8" secondAttribute="bottom" constant="5" id="LH1-BV-YqH"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="Gpn-HJ-YfX" secondAttribute="bottom" constant="5" id="R5v-Eu-GW2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Gpn-HJ-YfX" secondAttribute="trailing" constant="10" id="ueW-ce-kaQ"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>

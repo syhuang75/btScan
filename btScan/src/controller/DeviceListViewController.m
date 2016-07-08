@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _array_device = [btManager sharedInstance].array_btlist;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,19 +48,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [_array_device count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    CBPeripheral *peripheral = _array_device[indexPath.row];
     NSString *CellIdentifier;
     CellIdentifier = @"DeviceListTableViewCell";
     DeviceListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[DeviceListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.label_uuid.text = @"uuid";
-    cell.label_rssi.text = @"rssi";
+    cell.label_uuid.text = [NSString stringWithFormat:@"UUID : %@", peripheral.identifier.UUIDString];
+    cell.label_rssi.text = [NSString stringWithFormat:@"NAME : %@",peripheral.name];
     return cell;
 }
 

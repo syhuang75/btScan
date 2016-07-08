@@ -8,6 +8,7 @@
 
 #import "MainPageViewController.h"
 #import "DeviceListViewController.h"
+#import "btManager.h"
 
 @interface MainPageViewController ()
 
@@ -28,7 +29,7 @@
 }
 
 - (void)setData {
-    
+    [btManager sharedInstance];
 }
 
 - (void)setView {
@@ -36,11 +37,21 @@
 }
 
 - (IBAction)pressed_btn_scan:(id)sender {
-    /*
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
-                                                             bundle: nil];
-    DeviceListViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"DeviceListViewController"];
-    [self.navigationController pushViewController:vc animated:YES];
-     */
+    [btManager sharedInstance].delegate = self;
+    [[btManager sharedInstance] scan];
 }
+
+- (void)scanCallback {
+    NSMutableArray *array_temp = [btManager sharedInstance].array_btlist;
+    if ([array_temp count] > 0) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                                 bundle: nil];
+        DeviceListViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"DeviceListViewController"];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"沒有找到device." preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
 @end

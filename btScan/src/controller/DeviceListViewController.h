@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "btManager.h"
 
 @interface DeviceListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) NSMutableArray *array_device;
 @end
