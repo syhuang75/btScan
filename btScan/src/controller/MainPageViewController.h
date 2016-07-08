@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "btManager.h"
+#import "MBProgressHUD.h"
 
 @interface MainPageViewController : UIViewController <btManagerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label_version;

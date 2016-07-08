@@ -5,6 +5,7 @@ use_frameworks!
 target 'btScan' do
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'MBProgressHUD', '~> 0.9.2'
 
 end
 
