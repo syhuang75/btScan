@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DeviceListViewController.h
 //  btScan
 //
 //  Created by baron on 2016/7/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DeviceListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
-

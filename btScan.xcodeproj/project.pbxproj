@@ -10,10 +10,12 @@
 		2A0552576B848681B92DDD32 /* Pods_btScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB269E06ED579A3F523F179 /* Pods_btScan.framework */; };
 		926E61CC1D2E21B7009C4684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CB1D2E21B7009C4684 /* main.m */; };
 		926E61CF1D2E21B7009C4684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CE1D2E21B7009C4684 /* AppDelegate.m */; };
-		926E61D21D2E21B7009C4684 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61D11D2E21B7009C4684 /* ViewController.m */; };
 		926E61D51D2E21B7009C4684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E61D31D2E21B7009C4684 /* Main.storyboard */; };
 		926E61D71D2E21B7009C4684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926E61D61D2E21B7009C4684 /* Assets.xcassets */; };
 		926E61DA1D2E21B8009C4684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E61D81D2E21B8009C4684 /* LaunchScreen.storyboard */; };
+		926E61EA1D2E4164009C4684 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61E91D2E4164009C4684 /* MainPageViewController.m */; };
+		926E61ED1D2E4179009C4684 /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61EC1D2E4179009C4684 /* DeviceListViewController.m */; };
+		926E61F01D2E48A8009C4684 /* DeviceListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61EF1D2E48A8009C4684 /* DeviceListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,16 @@
 		926E61CB1D2E21B7009C4684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		926E61CD1D2E21B7009C4684 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		926E61CE1D2E21B7009C4684 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		926E61D01D2E21B7009C4684 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		926E61D11D2E21B7009C4684 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		926E61D41D2E21B7009C4684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		926E61D61D2E21B7009C4684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926E61D91D2E21B8009C4684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		926E61DB1D2E21B8009C4684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926E61E81D2E4164009C4684 /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		926E61E91D2E4164009C4684 /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		926E61EB1D2E4179009C4684 /* DeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListViewController.h; sourceTree = "<group>"; };
+		926E61EC1D2E4179009C4684 /* DeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListViewController.m; sourceTree = "<group>"; };
+		926E61EE1D2E48A8009C4684 /* DeviceListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTableViewCell.h; sourceTree = "<group>"; };
+		926E61EF1D2E48A8009C4684 /* DeviceListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewCell.m; sourceTree = "<group>"; };
 		997D9BF4BE4A869F7795946A /* Pods-btScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btScan.release.xcconfig"; path = "Pods/Target Support Files/Pods-btScan/Pods-btScan.release.xcconfig"; sourceTree = "<group>"; };
 		DCB269E06ED579A3F523F179 /* Pods_btScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,10 +80,9 @@
 		926E61C91D2E21B7009C4684 /* btScan */ = {
 			isa = PBXGroup;
 			children = (
+				926E61E31D2E4144009C4684 /* src */,
 				926E61CD1D2E21B7009C4684 /* AppDelegate.h */,
 				926E61CE1D2E21B7009C4684 /* AppDelegate.m */,
-				926E61D01D2E21B7009C4684 /* ViewController.h */,
-				926E61D11D2E21B7009C4684 /* ViewController.m */,
 				926E61D31D2E21B7009C4684 /* Main.storyboard */,
 				926E61D61D2E21B7009C4684 /* Assets.xcassets */,
 				926E61D81D2E21B8009C4684 /* LaunchScreen.storyboard */,
@@ -93,6 +98,51 @@
 				926E61CB1D2E21B7009C4684 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		926E61E31D2E4144009C4684 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				926E61E41D2E4144009C4684 /* controller */,
+				926E61E51D2E4144009C4684 /* manager */,
+				926E61E61D2E4144009C4684 /* model */,
+				926E61E71D2E4144009C4684 /* view */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		926E61E41D2E4144009C4684 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				926E61E81D2E4164009C4684 /* MainPageViewController.h */,
+				926E61E91D2E4164009C4684 /* MainPageViewController.m */,
+				926E61EB1D2E4179009C4684 /* DeviceListViewController.h */,
+				926E61EC1D2E4179009C4684 /* DeviceListViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		926E61E51D2E4144009C4684 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		926E61E61D2E4144009C4684 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		926E61E71D2E4144009C4684 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				926E61EE1D2E48A8009C4684 /* DeviceListTableViewCell.h */,
+				926E61EF1D2E48A8009C4684 /* DeviceListTableViewCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		AD08AC519C7364A41993F412 /* Frameworks */ = {
@@ -252,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926E61D21D2E21B7009C4684 /* ViewController.m in Sources */,
+				926E61ED1D2E4179009C4684 /* DeviceListViewController.m in Sources */,
 				926E61CF1D2E21B7009C4684 /* AppDelegate.m in Sources */,
 				926E61CC1D2E21B7009C4684 /* main.m in Sources */,
+				926E61F01D2E48A8009C4684 /* DeviceListTableViewCell.m in Sources */,
+				926E61EA1D2E4164009C4684 /* MainPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

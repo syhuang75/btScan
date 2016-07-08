@@ -9,7 +9,7 @@
         <!--Main Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPageViewController" id="BYZ-38-t0r" customClass="MainPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,9 +24,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bID-W3-20X">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bID-W3-20X">
+                                <rect key="frame" x="283" y="285" width="35" height="30"/>
                                 <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="pressed_btn_scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyx-KM-kY9"/>
+                                    <segue destination="miz-N6-G1f" kind="push" id="f7W-qS-dma"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -41,17 +45,18 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="6XN-bM-Sr0"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="miz-N6-G1f" kind="show" id="B5g-t9-kdb"/>
+                        <outlet property="btn_scan" destination="bID-W3-20X" id="Wio-Cs-g8b"/>
+                        <outlet property="label_version" destination="2Qh-2q-e6O" id="3ha-2D-ODD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="364" y="103"/>
         </scene>
-        <!--Device List-->
+        <!--Device LIst-->
         <scene sceneID="Vlp-1m-eYN">
             <objects>
-                <viewController id="miz-N6-G1f" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceListViewController" automaticallyAdjustsScrollViewInsets="NO" id="miz-N6-G1f" customClass="DeviceListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pvP-SP-DWo"/>
                         <viewControllerLayoutGuide type="bottom" id="FUN-Bw-vSh"/>
@@ -63,12 +68,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYg-DX-N7k">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-uF-SaT">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-uF-SaT">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gcx-Iu-t5F">
-                                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceListTableViewCell" id="gcx-Iu-t5F" customClass="DeviceListTableViewCell">
+                                                <rect key="frame" x="0.0" y="1" width="600" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gcx-Iu-t5F" id="EjI-AH-2Mn">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
@@ -87,6 +92,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="Gpn-HJ-YfX" firstAttribute="leading" secondItem="EjI-AH-2Mn" secondAttribute="leadingMargin" constant="30" id="1yG-Jz-0ma"/>
                                                         <constraint firstItem="asv-DD-Ua8" firstAttribute="top" secondItem="EjI-AH-2Mn" secondAttribute="topMargin" constant="3" id="84e-zP-rbO"/>
@@ -95,11 +101,19 @@
                                                         <constraint firstAttribute="bottomMargin" secondItem="Gpn-HJ-YfX" secondAttribute="bottom" constant="5" id="R5v-Eu-GW2"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="label_rssi" destination="Gpn-HJ-YfX" id="bnA-iS-ir0"/>
+                                                    <outlet property="label_uuid" destination="asv-DD-Ua8" id="1MQ-zi-gcl"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="miz-N6-G1f" id="d8E-Iy-f1z"/>
+                                            <outlet property="delegate" destination="miz-N6-G1f" id="oTO-hN-Cn1"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="7tG-uF-SaT" secondAttribute="bottom" id="DEJ-gq-I7L"/>
                                     <constraint firstItem="7tG-uF-SaT" firstAttribute="top" secondItem="JYg-DX-N7k" secondAttribute="top" id="byg-B8-Deb"/>
@@ -116,11 +130,11 @@
                             <constraint firstItem="JYg-DX-N7k" firstAttribute="leading" secondItem="fna-wC-wUb" secondAttribute="leading" id="xjx-oQ-RLz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Device List" id="RZ1-45-mRx"/>
+                    <navigationItem key="navigationItem" title="Device LIst" id="lOc-rY-joy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDH-bU-lEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="103"/>
+            <point key="canvasLocation" x="1152" y="103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a9p-kd-P2N">
