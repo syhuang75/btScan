@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A0552576B848681B92DDD32 /* Pods_btScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB269E06ED579A3F523F179 /* Pods_btScan.framework */; };
 		925142771D2F750C00E66798 /* btManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 925142761D2F750C00E66798 /* btManager.m */; };
+		9253B2191D321CC600297BEA /* pic1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9253B2181D321CC600297BEA /* pic1.PNG */; };
+		9253B21B1D321CDC00297BEA /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9253B21A1D321CDC00297BEA /* pic2.png */; };
 		926E61CC1D2E21B7009C4684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CB1D2E21B7009C4684 /* main.m */; };
 		926E61CF1D2E21B7009C4684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E61CE1D2E21B7009C4684 /* AppDelegate.m */; };
 		926E61D51D2E21B7009C4684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E61D31D2E21B7009C4684 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		0AD24393F0DAF5685324E5A6 /* Pods-btScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btScan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btScan/Pods-btScan.debug.xcconfig"; sourceTree = "<group>"; };
 		925142751D2F750C00E66798 /* btManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btManager.h; sourceTree = "<group>"; };
 		925142761D2F750C00E66798 /* btManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = btManager.m; sourceTree = "<group>"; };
+		9253B2181D321CC600297BEA /* pic1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.PNG; sourceTree = "<group>"; };
+		9253B21A1D321CDC00297BEA /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
 		926E61C71D2E21B7009C4684 /* btScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926E61CB1D2E21B7009C4684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		926E61CD1D2E21B7009C4684 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		926E61C91D2E21B7009C4684 /* btScan */ = {
 			isa = PBXGroup;
 			children = (
+				9253B2181D321CC600297BEA /* pic1.PNG */,
+				9253B21A1D321CDC00297BEA /* pic2.png */,
 				926E61E31D2E4144009C4684 /* src */,
 				926E61CD1D2E21B7009C4684 /* AppDelegate.h */,
 				926E61CE1D2E21B7009C4684 /* AppDelegate.m */,
@@ -220,9 +226,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9253B2191D321CC600297BEA /* pic1.PNG in Resources */,
 				926E61DA1D2E21B8009C4684 /* LaunchScreen.storyboard in Resources */,
 				926E61D71D2E21B7009C4684 /* Assets.xcassets in Resources */,
 				926E61D51D2E21B7009C4684 /* Main.storyboard in Resources */,
+				9253B21B1D321CDC00297BEA /* pic2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
